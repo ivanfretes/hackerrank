@@ -1,0 +1,44 @@
+Datos
+
+    * n = cantidad de elementos
+    * colores, representados por numeros
+        * 10 = verde
+        * 50 = rosa
+        * 20 = azul
+    * bolsa/coja  de medias / calcetines
+
+
+Objetivo
+    * Cantidad de pares para vender
+
+
+¿Que vamos a hacer?
+    * verde, verde, verde, verde, verde, azul, azul, azul
+        10,10,10,10, 10 ...  5,5,5 (ORDERNAR LAS MEDIAS)
+    * caja_de_cantidades => contiene la cantidad de cada media, 
+        en principio no cuenta con elementos, no contadados, cantidad de elementos = 0
+    * contar las medias por color
+        * [ verdes => 5, azul => 3] => 8 medias
+    * Separar medias pares
+        *  D = d * (c + r) => r = 0 // residuo debe ser docero para una division por dos
+    * Cantidad de medias pares 
+    * sumar cantidad de medias pares
+
+
+Prueba
+    * 6 , [1,3,2,1,3,3] => resultado = 2 pares
+    
+
+Como funciona
+    * [1,1,2,3,3,3] => ordenado
+    * [1,2,3] => que colores de medias tenemos no repetidas
+    * [
+            "color" => "cantidad",
+            1 => 2, - es par
+            2 => 1, - es impar
+            3 => 3 - es impar, per contiene un elemento par,
+        ]
+    * ver realmente cuales son pares, incluyendo a las que son impares y contienen elementos pares, cantidad impar distinta 1
+    * Sumar cantidad de medias que son pares
+
+

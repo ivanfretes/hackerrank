@@ -1,0 +1,37 @@
+Datos
+    n = cantidad de pasos a ser realizados por Gary
+    s = Camino Recorrido, representados por un conjunto de:
+        D = Descender
+        U = Ascender
+
+    step = costo 1
+    nivel_mar = 0
+
+    ruta = 
+
+
+Prueba / Ejemplo
+    s = [ DDUUUUDD ]
+
+Objetivo
+    Cantidad de Valles por las que Gary Atraveso
+
+¿Que vamos a hacer?
+    - Recorrer el listado o camino de Gary
+    - Verificar si debemos Ascender o Descender
+        - Si se verifica que el nivel del mar es descendiente y el mismo es igual a -1
+        - Contamos como un nuevo valle
+    
+    - Retornamos o indicamos la cantidad de valles a las que Gary accedio
+
+
+Como funciona
+    s = [ DDUUUUDD ]
+    si el paso de S == U
+        incrementar el nivel del mar
+    sino el paso de S == D
+        decrementamos el nivel del mar
+        
+
+        si el nivel del mar es -1
+            aumenta la cantidad de valles existentes
